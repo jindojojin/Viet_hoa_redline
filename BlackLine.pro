@@ -5,14 +5,18 @@
 #-------------------------------------------------
 
 QT       += core gui
-
+QT       += xml
 TARGET = BlackLine
 TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        blackline.cpp
+        blackline.cpp \
+    scriptcreator.cpp
 
-HEADERS  += blackline.h
+HEADERS  += blackline.h \
+    scriptcreator.h
 
 FORMS    += blackline.ui
+
+
