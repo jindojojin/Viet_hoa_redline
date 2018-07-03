@@ -1,0 +1,19 @@
+#ifndef SCRIPTCREATOR_H
+#define SCRIPTCREATOR_H
+
+#include<QtXml>
+#include<QString>
+class ScriptCreator
+{
+public:
+    ScriptCreator();
+    /*
+    * Hàm d? xóa 1 param trong script. (ch?c nang nào k dc ch?n thì xóa di)
+    * name là tên param
+    */
+    int delParam(QString name);
+private:
+    QDomDocument doc;
+};
+
+#endif // SCRIPTCREATOR_H
